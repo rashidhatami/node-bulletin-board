@@ -6,7 +6,7 @@ RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 
-COPY package*.json /usr/src/app/
+COPY package.json /usr/src/app/
 
 # Copy the file from your host to your current location
 
