@@ -5,7 +5,7 @@ FROM node:current-slim
 WORKDIR /usr/src/app
 
 # Copy the file from your host to your current location
-COPY package.json /var/lib/docker/tmp/docker-builder797401268
+COPY package.json /var/lib/docker/tmp/
 
 # Run the command inside your image filesystem
 RUN npm install
