@@ -5,7 +5,7 @@ FROM node:current-slim
 
 WORKDIR /usr/src/app
 
-COPY package.json .
+#COPY package.json .
 
 # Copy the file from your host to your current location
 
