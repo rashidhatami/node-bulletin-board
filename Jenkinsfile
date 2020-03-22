@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'docker image build -t bulletinboard:1.0 .'
-                sh 'docker container run --publish 8000:8080 --detach --name bb bulletinboard:1.0'
+                sh 'docker build -t bulletinboard:1.0 .'
+                sh 'docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0'
                
             }
         }
