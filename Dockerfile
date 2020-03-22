@@ -5,7 +5,7 @@ FROM node:current-slim
 WORKDIR /usr/src/app
 
 # Copy the file from your host to your current location
-COPY package.json /usr/src/app
+COPY . /usr/src/app
 
 # Run the command inside your image filesystem
 RUN npm install
