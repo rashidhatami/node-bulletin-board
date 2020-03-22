@@ -10,8 +10,8 @@ pipeline {
         stage('Build') {
             steps {
                 //sh 'cd /usr/src/app'
-                sh 'docker build -t bulletinboard:1.0 .'
-                sh 'docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0'
+                sh 'docker build -t bulletin:1.0 .'
+                sh 'docker run --publish 8110:8080 --detach --name bbb bulletin:1.0'
                 
                
             }
